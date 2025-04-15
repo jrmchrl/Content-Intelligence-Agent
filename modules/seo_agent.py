@@ -9,15 +9,31 @@ HEADERS = {"Authorization": f"Bearer {HF_TOKEN}"}
 API_URL = "https://api-inference.huggingface.co/models/bigscience/bloom"
 
 def generate_seo_content(topic):
-    prompt = f"""Erstelle einen SEO-Content-Plan zum Thema: {topic}.
+    prompt = f"""
+Du bist ein erfahrener deutschsprachiger SEO-Texter. Erstelle zum Thema '{topic}' einen vollständigen Content-Plan.
 
-Antwort in diesem Format:
+Format:
 
-- Relevante Keywords:
-- Blogstruktur (Einleitung, 3 Abschnitte, Fazit):
-- Haupt-Headline:
-- 3 alternative Headlines:
-- Einleitungstext (3 Sätze):
+Relevante Keywords:
+- ...
+
+Blogstruktur:
+- Einleitung
+- Abschnitt 1
+- Abschnitt 2
+- Abschnitt 3
+- Fazit
+
+Haupt-Headline:
+...
+
+Alternative Headlines:
+1. ...
+2. ...
+3. ...
+
+Einleitungstext:
+...
 """
     payload = {
         "inputs": prompt,
