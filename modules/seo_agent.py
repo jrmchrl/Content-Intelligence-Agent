@@ -6,16 +6,19 @@ load_dotenv()
 
 HF_TOKEN = os.getenv("HF_API_TOKEN")
 HEADERS = {"Authorization": f"Bearer {HF_TOKEN}"}
-API_URL = "https://api-inference.huggingface.co/models/gpt2"  # Oder ein anderes geeignetes Textmodell
+API_URL = "API_URL = "https://api-inference.huggingface.co/models/bigscience/bloom"  # Oder ein anderes geeignetes Textmodell
 
 def generate_seo_content(topic):
     prompt = f"""
-Du bist ein SEO-Texter. Für das Thema '{topic}':
+Du bist ein erfahrener deutschsprachiger SEO-Texter. Erstelle zum Thema '{topic}' einen vollständigen Content Blueprint:
 
-1. Nenne 5 relevante Keywords.
-2. Skizziere eine sinnvolle Blogstruktur (Einleitung, 3 Abschnitte, Fazit).
-3. Gib eine starke Haupt-Headline aus.
-4. Gib zusätzlich 3 kreative, aber suchmaschinenfreundliche Alternativ-Headlines aus.
+1. 5 relevante SEO-Keywords
+2. Vorschlag für eine Blogstruktur (Einleitung, 3 Abschnitte, Fazit)
+3. Eine starke, klickstarke Headline
+4. 3 weitere alternative Headlines mit Fokus auf Suchintention
+5. Eine einleitende Textpassage (ca. 3 Sätze)
+
+Antwort bitte direkt im Stil eines Content-Briefs.
 """
     payload = {
         "inputs": prompt,
