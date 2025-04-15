@@ -25,4 +25,4 @@ Du bist ein generativer SEO-Agent. Analysiere das Thema '{topic}' wie folgt:
     if response.status_code == 200:
         return response.json()[0]["generated_text"]
     else:
-        return f"Fehler: {response.status_code} - {response.json()}"
+        return f"Fehler: {response.status_code} - {response.text}"
