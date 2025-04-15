@@ -23,7 +23,7 @@ Antwort bitte direkt im Stil eines Content-Briefs.
     payload = {
         "inputs": prompt,
         "parameters": {
-            "max_new_tokens": 300
+            "max_new_tokens": 250
         }
     }
     response = requests.post(API_URL, headers=HEADERS, json=payload)
