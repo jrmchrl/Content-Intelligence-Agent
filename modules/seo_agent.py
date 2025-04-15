@@ -6,7 +6,7 @@ load_dotenv()
 
 HF_TOKEN = os.getenv("HF_API_TOKEN")
 HEADERS = {"Authorization": f"Bearer {HF_TOKEN}"}
-API_URL = "https://api-inference.huggingface.co/models/tiiuae/falcon-7b-instruct"
+API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-base"
 
 def generate_seo_content(topic):
     prompt = f"""
