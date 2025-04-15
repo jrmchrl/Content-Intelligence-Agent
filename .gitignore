@@ -1,0 +1,15 @@
+# API keys & Umgebungsvariablen
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtuelle Umgebungen
+venv/
+
+# Streamlit-Cache
+.streamlit/
+
+# VS Code
+.vscode/
