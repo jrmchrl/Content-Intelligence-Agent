@@ -22,6 +22,23 @@ Dieses Modell kann zur Klassifikation von Themen verwendet werden. Das rohe Mode
         Statt:“Gib mir Keywords zu ‘Nachhaltige Möbel’” → „nachhaltig“, „ökologisch“, „Design“
         Macht GEO: “Versteh das Thema, erfasse Suchintentionen, bau Inhalte, die Menschen und Suchmaschinen abholen.”
 
+        Sentiment Analyse
+        Textklassifikation nach Thema
+	    Named Entity Recognition (Personen, Orte, etc.)
+	    Keyword Extraction (SEO!)
+
+        ## 🧠 NLP Toolkit
+
+            Dieses Modul bietet eine Auswahl an NLP-Modellen aus der Hugging Face Inference API:
+
+            - **Sentiment Analysis** (positiv/negativ Einschätzung)
+            - **Named Entity Recognition (NER)** – erkennt Personen, Orte, Organisationen etc.
+            - **Themenklassifikation** – bestimmt thematische Zugehörigkeit
+            - **Keyword Extraction** – extrahiert zentrale Begriffe
+            - **Fragebeantwortung** – beantworte Fragen auf Basis eines Kontexts
+
+            Diese Modelle können über das UI ausgewählt und getestet werden.
+
 - [ ] Medienanalyse aus PDF oder HTML (→ nächstes Level)
 - [ ] Streamlit bei Hugging Face Spaces oder Streamlit Cloud deployen
 
