@@ -29,13 +29,13 @@ Dieses Modell kann zur Klassifikation von Themen verwendet werden. Das rohe Mode
 - [X] **NLP Toolkit**: Modell-Auswahl (Sentiment, NER, Themen, Keywords, QA)
         Dieses Modul bietet eine Auswahl an NLP-Modellen aus der Hugging Face Inference API:
 
-            - Sentiment Analysis (positiv/negativ Einschätzung)
-            - Named Entity Recognition (NER) – erkennt Personen, Orte, Organisationen etc.
-            - Themenklassifikation – bestimmt thematische Zugehörigkeit
-            - Keyword Extraction – extrahiert zentrale Begriffe
-            - Fragebeantwortung – beantworte Fragen auf Basis eines Kontexts
+        - Sentiment Analysis (positiv/negativ Einschätzung)
+        - Named Entity Recognition (NER) – erkennt Personen, Orte, Organisationen etc.
+        - Themenklassifikation – bestimmt thematische Zugehörigkeit
+        - Keyword Extraction – extrahiert zentrale Begriffe
+        - Fragebeantwortung – beantworte Fragen auf Basis eines Kontexts
 
-            Diese Modelle können über das UI ausgewählt und getestet werden.
+        Diese Modelle können über das UI ausgewählt und getestet werden.
 
 - [ ] **Medienanalyse** *(geplant)*: Analyse aus PDF/HTML
 - [ ] **Deployment** *(in Planung)*: Hugging Face Spaces oder Streamlit Cloud
