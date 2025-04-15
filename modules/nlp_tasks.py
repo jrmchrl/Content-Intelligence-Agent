@@ -36,6 +36,14 @@ def run_model(model_key, inputs, additional_inputs=None):
     else:
         payload = {"inputs": inputs}
 
+    if model_key == "topic":
+        payload["parameters"] = {
+            "candidate_labels": [
+                "Sport", "Politik", "Wirtschaft", "Technologie", "Kultur",
+                "Wissenschaft", "Bildung", "Gesundheit", "Reisen", "Umwelt"
+            ]
+        }
+
     response = requests.post(model_url, headers=HEADERS, json=payload)
 
     try:
