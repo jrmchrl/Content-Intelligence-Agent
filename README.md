@@ -15,7 +15,7 @@ Dieses Modell kann zur Klassifikation von Themen verwendet werden. Das rohe Mode
 
 
 ## 🔁 Zusatz-Module dieses Agenten:
-- [ ] Zusatz-Modul: GEO-Agent 
+- [X] **GEO-Agent**: KI-basierter SEO-Content-Generator   
         KI-Agent, der Inhalte nicht nur für Suchmaschinen optimiert,
         sondern mit KI erzeugt, semantisch klüger ist und auf Suchintentionen reagiert.
 
@@ -26,10 +26,8 @@ Dieses Modell kann zur Klassifikation von Themen verwendet werden. Das rohe Mode
         Textklassifikation nach Thema
 	    Named Entity Recognition (Personen, Orte, etc.)
 	    Keyword Extraction (SEO!)
-
-        ## 🧠 NLP Toolkit
-
-            Dieses Modul bietet eine Auswahl an NLP-Modellen aus der Hugging Face Inference API:
+- [X] **NLP Toolkit**: Modell-Auswahl (Sentiment, NER, Themen, Keywords, QA)
+        Dieses Modul bietet eine Auswahl an NLP-Modellen aus der Hugging Face Inference API:
 
             - **Sentiment Analysis** (positiv/negativ Einschätzung)
             - **Named Entity Recognition (NER)** – erkennt Personen, Orte, Organisationen etc.
@@ -39,10 +37,14 @@ Dieses Modell kann zur Klassifikation von Themen verwendet werden. Das rohe Mode
 
             Diese Modelle können über das UI ausgewählt und getestet werden.
 
-- [ ] Medienanalyse aus PDF oder HTML (→ nächstes Level)
-- [ ] Streamlit bei Hugging Face Spaces oder Streamlit Cloud deployen
+- [ ] **Medienanalyse** *(geplant)*: Analyse aus PDF/HTML
+- [ ] **Deployment** *(in Planung)*: Hugging Face Spaces oder Streamlit Cloud
 
 
 ## 🧪 Testen
 ```bash
+
+git clone https://github.com/dein-repo.git
+cd content-intelligence-agent
+pip install -r requirements.txt
 streamlit run app.py
