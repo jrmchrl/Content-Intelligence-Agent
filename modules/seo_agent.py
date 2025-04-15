@@ -9,16 +9,15 @@ HEADERS = {"Authorization": f"Bearer {HF_TOKEN}"}
 API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-base"
 
 def generate_seo_content(topic):
-    prompt = f"""
-Du bist ein erfahrener deutschsprachiger SEO-Texter. Erstelle zum Thema '{topic}' einen vollständigen Content Blueprint:
+    prompt = f"""Erstelle einen SEO-Content-Plan zum Thema: {topic}.
 
-1. 5 relevante SEO-Keywords
-2. Vorschlag für eine Blogstruktur (Einleitung, 3 Abschnitte, Fazit)
-3. Eine starke, klickstarke Headline
-4. 3 weitere alternative Headlines mit Fokus auf Suchintention
-5. Eine einleitende Textpassage (ca. 3 Sätze)
+Antwort in diesem Format:
 
-Antwort bitte direkt im Stil eines Content-Briefs.
+- Relevante Keywords:
+- Blogstruktur (Einleitung, 3 Abschnitte, Fazit):
+- Haupt-Headline:
+- 3 alternative Headlines:
+- Einleitungstext (3 Sätze):
 """
     payload = {
         "inputs": prompt,
