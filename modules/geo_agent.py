@@ -13,8 +13,9 @@ def generate_geo_blueprint(topic):
         "1. Was ist die typische Suchintention hinter diesem Begriff?\n"
         "2. Welche Longtail-Suchanfragen, Fragen und verwandte Themen sind relevant?\n"
         "3. Welche Struktur könnte ein herausragender Blogpost zu diesem Thema haben?\n"
-        "4. Welche Headline + Meta-Beschreibung wären optimal?\n"
-        "5. Bonus: Schreibe einen möglichen Einstiegstext für das Intro.\n"
+        "4. Erstelle 2 alternative SEO-optimierte Headlines (z. B. emotional vs. sachlich).\n"
+        "5. Erstelle 2 passende Meta-Beschreibungen.\n"
+        "6. Bonus: Schreibe einen möglichen Einstiegstext für das Intro.\n"
     )
     payload = {"inputs": prompt, "parameters": {"max_new_tokens": 500}}
     response = requests.post(API_URL, headers=HEADERS, json=payload)
